@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
+    <title>Diego Fernando Llanos</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -20,10 +20,9 @@
     </style>
   </head>
   <body class="bg-gray-900 text-white scroll-smooth">
-    <!-- Navbar -->
     <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-gray-900/80 shadow-md">
       <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">MiPortafolio</h1>
+        <h1 class="text-xl font-bold">Diego Llanos</h1>
         <nav class="space-x-4 hidden md:block">
           <a href="#inicio" class="hover:underline">Inicio</a>
           <a href="#sobre" class="hover:underline">Sobre mí</a>
@@ -33,36 +32,53 @@
       </div>
     </header>
 
-    <!-- Hero -->
     <section id="inicio" class="min-h-screen flex items-center justify-center flex-col text-center px-4 fade-in pt-24">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hola, soy <span class="text-indigo-400">[Tu Nombre]</span></h2>
-      <p class="text-lg md:text-xl text-gray-300 mb-6">Desarrollador FullStack | Apasionado por la tecnología</p>
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hola, soy <span class="text-indigo-400">Diego Fernando Llanos</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-6">Estudiante de Ingeniería en Sistemas | Desarrollador Web | Apasionado por la tecnología y la IA</p>
       <a href="#proyectos" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-all duration-300">Ver proyectos</a>
     </section>
 
-    <!-- Sobre mí -->
     <section id="sobre" class="max-w-4xl mx-auto py-20 px-4 fade-in">
       <h3 class="text-3xl font-bold mb-6">Sobre mí</h3>
-      <p class="text-gray-300 leading-relaxed">Soy un desarrollador con experiencia en frontend y backend, apasionado por crear soluciones elegantes y funcionales. Me gusta aprender constantemente y aplicar buenas prácticas en mis proyectos.</p>
+      <p class="text-gray-300 leading-relaxed">
+        Soy estudiante de Ingeniería en Sistemas con experiencia en desarrollo web, inteligencia artificial, visión por computadora y mantenimiento de equipos. Me interesa crear soluciones tecnológicas centradas en el bienestar y la experiencia del usuario, integrando herramientas modernas como React, Firebase y FastAPI. 
+      </p>
     </section>
 
-    <!-- Proyectos -->
     <section id="proyectos" class="bg-gray-800 py-20 px-4 fade-in">
       <div class="max-w-6xl mx-auto">
         <h3 class="text-3xl font-bold mb-10 text-center">Proyectos</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Proyecto -->
+
           <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
-            <h4 class="text-xl font-semibold mb-2">Nombre del Proyecto</h4>
-            <p class="text-gray-400 text-sm">Descripción corta del proyecto.</p>
-            <a href="#" class="text-indigo-400 text-sm hover:underline mt-2 inline-block">Ver más</a>
+            <h4 class="text-xl font-semibold mb-2">Sistema de Recomendación de Ropa</h4>
+            <p class="text-gray-400 text-sm">Aplicación que recomienda ropa según el estado emocional del usuario, integrando React, FastAPI, Firebase y una red neuronal entrenada con imágenes.</p>
           </div>
-          <!-- Repite según tus proyectos -->
+
+          <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
+            <h4 class="text-xl font-semibold mb-2">Huellitas de Esperanza</h4>
+            <p class="text-gray-400 text-sm">Web para facilitar la adopción de animales. Incluye búsqueda avanzada, perfiles de mascotas y autenticación. React, Firebase, MySQL y Node.js.</p>
+          </div>
+
+          <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
+            <h4 class="text-xl font-semibold mb-2">Proyecto de Robótica</h4>
+            <p class="text-gray-400 text-sm">Control en tiempo real de robots en partidos de fútbol robótico. App móvil desarrollada con Android Studio y Java, usando Bluetooth para la conexión.</p>
+          </div>
+
+          <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
+            <h4 class="text-xl font-semibold mb-2">Clasificador de Clima</h4>
+            <p class="text-gray-400 text-sm">Modelo de clasificación de imágenes meteorológicas entrenado con TensorFlow y Google Colab. Proyecto orientado a visión por computadora.</p>
+          </div>
+
+          <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
+            <h4 class="text-xl font-semibold mb-2">Reconocimiento de Emociones</h4>
+            <p class="text-gray-400 text-sm">Uso de OpenCV y modelos de IA para detectar emociones faciales a través de webcam. Implementado en Python con interfaz gráfica.</p>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Contacto -->
     <section id="contacto" class="py-20 px-4 fade-in">
       <div class="max-w-4xl mx-auto text-center">
         <h3 class="text-3xl font-bold mb-6">Contáctame</h3>
@@ -70,22 +86,20 @@
         <div class="flex justify-center space-x-6">
           <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
             <svg class="w-6 h-6 text-white hover:text-indigo-400 transition" fill="currentColor" viewBox="0 0 24 24">
-              <path d="..."/> <!-- Puedes poner aquí el path de GitHub o usar íconos de Lucide -->
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.207 11.387.6.113.793-.26.793-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 1.204.084 1.837 1.237 1.837 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.42-1.305.763-1.604-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.468-2.382 1.235-3.222-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.003-.403 1.02.004 2.047.137 3.006.403 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.804 5.625-5.475 5.922.43.37.814 1.102.814 2.222v3.293c0 .32.19.694.8.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z" />
             </svg>
           </a>
-          <a href="mailto:tuemail@ejemplo.com" aria-label="Email">
+          <a href="https://www.linkedin.com/in/diego-fernando-llanos/" target="_blank" aria-label="LinkedIn">
             <svg class="w-6 h-6 text-white hover:text-indigo-400 transition" fill="currentColor" viewBox="0 0 24 24">
-              <path d="..."/>
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.24 8.27H4.7v15.48H.24V8.27zm7.36 0h4.26v2.11h.06c.59-1.12 2.03-2.3 4.18-2.3 4.47 0 5.3 2.94 5.3 6.76v7.91h-4.46v-7c0-1.67-.03-3.81-2.32-3.81-2.33 0-2.69 1.82-2.69 3.7v7.11H7.6V8.27z" />
             </svg>
           </a>
-          <!-- Añade más iconos según tus redes -->
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center text-gray-500 text-sm py-6">
-      © 2025 TuNombre. Todos los derechos reservados.
+      © 2025 Diego Fernando Llanos. Todos los derechos reservados.
     </footer>
   </body>
 </html>
