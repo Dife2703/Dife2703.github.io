@@ -1,50 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio | ghitto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>ghitto</h1>
-    <p>Desarrollador • Creativo • Aprendiz constante</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white scroll-smooth">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-gray-900/80 shadow-md">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">MiPortafolio</h1>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#inicio" class="hover:underline">Inicio</a>
+          <a href="#sobre" class="hover:underline">Sobre mí</a>
+          <a href="#proyectos" class="hover:underline">Proyectos</a>
+          <a href="#contacto" class="hover:underline">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy un apasionado por la tecnología y la creación de cosas nuevas. Me encanta aprender, experimentar y construir proyectos que tengan impacto.
-      </p>
+    <!-- Hero -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center flex-col text-center px-4 fade-in pt-24">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hola, soy <span class="text-indigo-400">[Tu Nombre]</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-6">Desarrollador FullStack | Apasionado por la tecnología</p>
+      <a href="#proyectos" class="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full transition-all duration-300">Ver proyectos</a>
     </section>
 
-    <section class="projects">
-      <h2>Proyectos</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>🎹 Piano para Minetest</h3>
-          <p>Un mod interactivo que permite tocar música con el teclado dentro del juego Minetest.</p>
-          <a href="https://github.com/tu-usuario/mod-teclado-minetest" target="_blank">Ver en GitHub</a>
-        </div>
+    <!-- Sobre mí -->
+    <section id="sobre" class="max-w-4xl mx-auto py-20 px-4 fade-in">
+      <h3 class="text-3xl font-bold mb-6">Sobre mí</h3>
+      <p class="text-gray-300 leading-relaxed">Soy un desarrollador con experiencia en frontend y backend, apasionado por crear soluciones elegantes y funcionales. Me gusta aprender constantemente y aplicar buenas prácticas en mis proyectos.</p>
+    </section>
 
-        <div class="project">
-          <h3>🧪 Otro Proyecto</h3>
-          <p>Descripción breve de otro proyecto que quieras destacar.</p>
-          <a href="#">Ver más</a>
+    <!-- Proyectos -->
+    <section id="proyectos" class="bg-gray-800 py-20 px-4 fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold mb-10 text-center">Proyectos</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Proyecto -->
+          <div class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:scale-105 transition-all duration-300 p-4">
+            <h4 class="text-xl font-semibold mb-2">Nombre del Proyecto</h4>
+            <p class="text-gray-400 text-sm">Descripción corta del proyecto.</p>
+            <a href="#" class="text-indigo-400 text-sm hover:underline mt-2 inline-block">Ver más</a>
+          </div>
+          <!-- Repite según tus proyectos -->
         </div>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contacto</h2>
-      <p>Puedes escribirme a <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 px-4 fade-in">
+      <div class="max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-6">Contáctame</h3>
+        <p class="text-gray-400 mb-4">Puedes encontrarme en:</p>
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+            <svg class="w-6 h-6 text-white hover:text-indigo-400 transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="..."/> <!-- Puedes poner aquí el path de GitHub o usar íconos de Lucide -->
+            </svg>
+          </a>
+          <a href="mailto:tuemail@ejemplo.com" aria-label="Email">
+            <svg class="w-6 h-6 text-white hover:text-indigo-400 transition" fill="currentColor" viewBox="0 0 24 24">
+              <path d="..."/>
+            </svg>
+          </a>
+          <!-- Añade más iconos según tus redes -->
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 ghitto. Todos los derechos reservados.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm py-6">
+      © 2025 TuNombre. Todos los derechos reservados.
+    </footer>
+  </body>
 </html>
